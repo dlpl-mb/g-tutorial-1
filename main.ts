@@ -1,9 +1,3 @@
-basic.forever(function () {
-    basic.showLeds(`
-        . . . . .
-        . . # . .
-        . . # . .
-        . . # . .
-        . . . . .
-        `)
+input.onGesture(Gesture.Shake, function () {
+    basic.showNumber(randint(0, 10))
 })
